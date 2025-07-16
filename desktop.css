@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+.Container {
+  display: grid;
+  width: max(40%, 700px);
+  height: max(500px, 40vh);
+  overflow: auto;
+  border-radius: 2rem;
+  background-color: white;
+  grid-template-columns: repeat(2, 50%);
+}
+.ScoreSection {
+  border-radius: 2rem;
+  justify-content: space-around;
+}
+.ScoreSection article.score {
+  width: clamp(200px, 21vw, 250px);
+  height: clamp(200px, 21vw, 250px);
+}
+
+.ScoreSection h3 {
+  font-size: clamp(1rem, 1.4vw, 2rem);
+}
+
+.ScoreSection article.score p:first-child {
+  font-size: clamp(5rem, 6vw, 7rem);
+}
+.ScoreSection article.Content p:last-of-type {
+  width: clamp(300px, 30vw, 330px);
+  padding: 5px;
+}
+.Summary article {
+  height: clamp(3rem, 4vw, 4rem);
+}
+.Summary article aside img,
+.Summary article aside p {
+  font-size: clamp(1rem, 1vw, 2rem);
+}
